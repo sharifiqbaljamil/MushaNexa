@@ -10,12 +10,12 @@ const page = () => {
   return (
     <main>
       <Hero />
-      <About />
-      <Services />
-      <WorkProcess />
-      <OurWork />
-      <Testimonial />
-      <Contact />
+      {/* <About /> */}
+      {/* <Services /> */}
+      {/* <WorkProcess /> */}
+      {/* <OurWork /> */}
+      {/* <Testimonial /> */}
+      {/* <Contact /> */}
     </main>
   )
 }

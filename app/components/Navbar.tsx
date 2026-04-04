@@ -11,7 +11,7 @@ const Navbar = () => {
 					<Image src='/logo_white.png' alt='logo' width={48} height={48} />
 				</div>
 				{/* links */}
-				<ul className='hidden lg:flex lg:absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black font-semibold gap-12 py-2 px-6 rounded'>
+				<ul className='hidden l:flex lg:absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black font-semibold gap-12 py-2 px-6 rounded'>
 					{navLinks.map((link, idx) => (
 						<li key={idx}>
 							<a href={`#${link}`} className='uppercase'>
@@ -21,7 +21,7 @@ const Navbar = () => {
 					))}
 				</ul>
 				{/* cta */}
-				<a href='#contact' className='ml-auto button'>
+				<a href='#contact' className='ml-auto button hidden'>
 					Contact
 				</a>
 				{/* hamburger */}

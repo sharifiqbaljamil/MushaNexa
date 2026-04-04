@@ -24,10 +24,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className={`${ibmPlexSans.variable} antialiased`}>
-			<body>
+			<body className='select-none'>
 				<Navbar />
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);
