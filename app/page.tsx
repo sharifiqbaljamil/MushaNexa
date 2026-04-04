@@ -15,7 +15,7 @@ const page = () => {
       {/* <WorkProcess /> */}
       {/* <OurWork /> */}
       {/* <Testimonial /> */}
-      {/* <Contact /> */}
+      <Contact />
     </main>
   )
 }

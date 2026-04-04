@@ -27,7 +27,7 @@ export default function RootLayout({
 			<body className='select-none'>
 				<Navbar />
 				{children}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	);
