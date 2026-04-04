@@ -10,7 +10,7 @@ const page = () => {
   return (
     <main>
       <Hero />
-      {/* <About /> */}
+      <About />
       {/* <Services /> */}
       {/* <WorkProcess /> */}
       {/* <OurWork /> */}
