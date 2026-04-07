@@ -14,15 +14,14 @@ const Navbar = () => {
 				<NavbarLogo />
 				<NavbarLinks />
 				<Button />
-				{ mobileMenu ? (
-					<X
-						className='lg:hidden'
-						onClick={() => setmobileMenu(!mobileMenu)}
-					/>
-				) : <Tally4
+				{mobileMenu ? (
+					<X className='lg:hidden' onClick={() => setmobileMenu(!mobileMenu)} />
+				) : (
+					<Tally4
 						className='rotate-90 lg:hidden'
 						onClick={() => setmobileMenu(!mobileMenu)}
-					/> }
+					/>
+				)}
 			</div>
 			<div
 				className={`absolute bg-dark p-16 z-10 w-full flex justify-center items-center lg:hidden text-center text-3xl sm:text-4xl transition-opacity duration-1000 ${mobileMenu ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}

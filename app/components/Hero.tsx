@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Button from './Button';
 
 const Hero = () => {
 	return (
@@ -15,6 +14,7 @@ const Hero = () => {
 					/>
 					<div className='absolute top-0 left-0 h-full w-full bg-linear-to-b from-transparent from-80% to-black pointer-events-none'></div>
 					<div className='absolute top-0 left-0 h-full w-full bg-linear-to-r from-transparent from-80% to-black pointer-events-none'></div>
+					<div className='absolute top-0 left-0 h-full w-full bg-linear-to-l from-transparent from-90% to-black pointer-events-none'></div>
 				</div>
 
 				<div className='p-12 md:p-16 flex flex-col gap-6 lg:gap-8 xl:gap-16 lg:justify-center'>
@@ -30,7 +30,6 @@ const Hero = () => {
 					<p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center font-mono'>
 						Serving businesses of all sizes across India and worldwide
 					</p>
-					{/* <Button /> */}
 				</div>
 			</div>
 		</section>
