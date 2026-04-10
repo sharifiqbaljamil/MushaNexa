@@ -12,22 +12,22 @@ const Footer = () => {
 				<p className='text-center text-xs sm:text-sm md:text-base lg:text-lg tracking-wide mt-1'>All Rights Reserved &copy; 2026</p>
 				<ul className='flex justify-center gap-3 sm:gap-5 md:gap-6 mt-4 text-lg sm:text-xl md:text-2xl pb-16'>
 					<li>
-						<a href='https://www.facebook.com/mushanexa/'>
+						<a href='https://www.facebook.com/mushanexa/' target='_blank' rel='noopener noreferrer'>
 							<RiFacebookFill />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.instagram.com/mushanexa/'>
+						<a href='https://www.instagram.com/mushanexa/' target='_blank' rel='noopener noreferrer'>
 							<RiInstagramLine />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.linkedin.com/company/mushanexa/'>
+						<a href='https://www.linkedin.com/company/mushanexa/' target='_blank' rel='noopener noreferrer'>
 							<RiLinkedinFill />
 						</a>
 					</li>
 					<li>
-						<a href='https://x.com/mushanexa'>
+						<a href='https://x.com/mushanexa' target='_blank' rel='noopener noreferrer'>
 							<RiTwitterXLine />
 						</a>
 					</li>

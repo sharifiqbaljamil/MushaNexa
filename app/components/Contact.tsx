@@ -13,12 +13,14 @@ const Contact = () => {
 			id: 1,
 			through: 'email',
 			value: 'mushanexa@gmail.com',
+			useValue: 'mailto:mushanexa@gmail.com',
 			icon: <RiMailSendLine />,
 		},
 		{
 			id: 1,
 			through: 'whatsapp',
-			value: '(+91) 9876543210',
+			value: '9204471428',
+			useValue: 'https://wa.me/919204471428',
 			icon: <RiWhatsappLine />,
 		},
 		{
@@ -29,7 +31,7 @@ const Contact = () => {
 		},
 	];
 	return (
-		<section className='px-[4vw] py-[10vh] border-b border-black/5 bg-white/60 relative overflow-hidden'>
+		<section id='contact' className='px-[4vw] py-[10vh] border-b border-black/5 bg-white/60 relative overflow-hidden'>
 
 			<div className='container mx-auto relative z-10'>
 				<h2 className='font-extrabold text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] mb-[8vh] tracking-tighter'>
@@ -40,7 +42,7 @@ const Contact = () => {
 					{contactDetails.map((contact) => (
 						<a
 							key={contact.id}
-							href={`mailto:${contact.value}`}
+							href={contact.useValue || '#'}
 							className={`group flex items-center gap-[4vw] lg:gap-[1.5vw] p-[3vh] lg:p-[2vw] bg-white border border-black/5 rounded-3xl hover:shadow-2xl hover:shadow-black/5 transition-all duration-500 hover:-translate-y-2`}
 						>
 							<div
