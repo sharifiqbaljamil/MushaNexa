@@ -32,6 +32,13 @@ const Services = () => {
 		},
 		{
 			id: 5,
+			serviceName: 'Shopify Development',
+			image: '/shopify_logo.webp',
+			description:
+				'Building high-converting Shopify stores with custom themes, seamless integrations, and optimized user experiences for eCommerce success.'
+		},
+		{
+			id: 6,
 			serviceName: 'SEO Optimization',
 			image: '/seo.webp',
 			description:
@@ -65,7 +72,7 @@ const Services = () => {
 						<p className='text-lg md:text-xl lg:text-2xl font-light col-span-5'>
 							{service.description}
 						</p>
-						<div className='absolute -top-full left-0 w-full -translate-yfull group-hover:translate-y-full h-full bg-green-600 -z-10 transition-all duration-700'></div>
+						<div className={`absolute -top-full left-0 w-full -translate-yfull group-hover:translate-y-full h-full ${service.id === 1 ? 'bg-blue-600' : service.id === 2 ? 'bg-gray-600' : service.id === 3 ? 'bg-sky-500' : service.id === 4 ? 'bg-gray-600' : service.id === 5 ? 'bg-green-600' : 'bg-amber-600'} -z-10 transition-all duration-700`}></div>
 					</div>
 				))}
 			</div>

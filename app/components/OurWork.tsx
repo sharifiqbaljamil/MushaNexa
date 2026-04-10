@@ -2,8 +2,9 @@ import { RiEyeFill } from '@remixicon/react';
 
 const OurWork = () => {
 	const data = [
-		{ id: '01', title: 'ThreatsEye', description: 'ThreatsEye is an advanced cybersecurity platform delivering AI-driven threat intelligence, real-time monitoring, and rapid incident response.', img: '/projectone.png', imgLarge: '/projectonelarge.png', link: 'https://threatseye.com/' },
-		{ id: '02', title: 'ArcelorMittal', description: 'A custom-built corporate website created for ArcelorMittal with responsive design, brand-focused messaging, and a polished digital presence.', img: '/projecttwo.png', imgLarge: '/projecttwolarge.png', link: 'https://barsandrods.arcelormittal.com/' },
+		{ id: '01', title: 'Threats Eye', description: 'A showcase of a modern cybersecurity website built with responsive design, clear brand messaging, and polished UI for professional digital presence.', img: '/projectone.png', imgLarge: '/projectonelarge.png', link: 'https://threatseye.com/' },
+		{ id: '02', title: 'Arcelor Mittal', description: 'A custom-built corporate website created for ArcelorMittal with responsive design, brand-focused messaging, and a polished digital presence.', img: '/projecttwo.png', imgLarge: '/projecttwolarge.png', link: 'https://barsandrods.arcelormittal.com/' },
+		{ id: '03', title: 'Nayan Sukhe', description: 'A polished ecommerce experience designed for a luxury fashion brand, emphasizing product storytelling, responsive layout, and premium visual presentation.', img: '/projectthree.png', imgLarge: '/projectthreelarge.png', link: 'https://nayansukhexclusive.com/' },
 	];
 	return (
 		<section id='work' className='container mx-auto px-4'>
@@ -22,7 +23,7 @@ const OurWork = () => {
 						</picture>
 						<h3 className='font-bold text-xl md:text-2xl lg:text-3xl sm:items-end sm:self-end'>{project.title}</h3>
 						<p className='text-lg md:text-xl lg:text-2xl font-light sm:self-start lg:self-center'>{project.description}</p>
-						<a href={project.link} target='_blank' rel='noopener noreferrer' className='flex items-center gap-4 font-semibold bg-black text-white px-4 py-2 w-fit row-start-3 row-end-4 sm:mx-auto rounded-full sm:col-start-2 lg:mx-0 lg:justify-self-start'>View Project <RiEyeFill /></a>
+						<a href={project.link} target='_blank' rel='noopener noreferrer' className='flex items-center gap-4 font-semibold bg-black text-white px-4 py-2 w-fit row-start-3 row-end-4 sm:mx-auto rounded-full sm:col-start-2 lg:mx-0 lg:justify-self-start text-sm md:text-base'>View Project <RiEyeFill /></a>
 					</div>
 				))}
 			</div>
