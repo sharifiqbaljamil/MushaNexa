@@ -16,7 +16,6 @@ function SplashCursor({
   COLOR_UPDATE_SPEED = 10,
   BACK_COLOR = { r: 0.5, g: 0, b: 0 },
   TRANSPARENT = true,
-  children,
 }) {
   const canvasRef = useRef(null);
   const animationFrameId = useRef(null);
@@ -1064,7 +1063,6 @@ function SplashCursor({
           display: 'block'
         }}
       />
-      {children}
     </div>
   );
 }
